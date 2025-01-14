@@ -8,3 +8,39 @@
 - Conocer los nuevos elementos de lenguaje aportados por ES6
 
 ---
+
+
+COMPILAR
+```ts
+// Crear una variable de tipo string llamada "mensaje"
+let mensaje: string 
+mensaje = "Hola, mundo!";
+// Imprimir el valor de la variable
+console.log(mensaje); 
+
+// tsc -> compila a js
+```
+- ts compile 
+
+```js
+// Crear una variable de tipo string llamada "mensaje"
+let mensaje = "Hola, mundo!";
+// Imprimir el valor de la variable
+console.log(mensaje); 
+
+// tsc -> compila a js
+```
+- INTERPRETAR
+
+
+
+INTERPRETAR
+
+
+TRANSPILAR
+español Argentino 2025 -> Español neutro
+EC6 EC7   ->   JS puro  - BABEL
+
+
+### Preguntas
+- 
