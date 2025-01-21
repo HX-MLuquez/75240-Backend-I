@@ -88,6 +88,8 @@ Realizar prueba de individualidad entre las instancias.
 */
 
 class Contador {
+
+  //* Props - Datos - atributos
   static contadorGlobal = 0;
 
   constructor(nombre) {
@@ -122,6 +124,9 @@ console.log(Contador.contadorGlobal);
 //* Lo del Constructor siempre con el THIS
 
 const contadorUno = new Contador("Pedro") 
+/*
+Contador { nombre: 'Pedro', contadorIndividual: 0  // Métodos contar -  getCuentaIndividual - etc}
+*/
 console.log(contadorUno)
 console.log(Contador.contadorGlobal);
 console.log(contadorUno.contar())
