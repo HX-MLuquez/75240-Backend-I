@@ -1,4 +1,3 @@
-import { error } from "console";
 
 // Promise CLASS       el Promise |
 var miPromesa1 = new Promise(function (resolve, reject) {
