@@ -91,3 +91,13 @@ function saludamos(){
     mimi()
 }
 // console.log(variableInterna) //! variableInterna is not defined
+
+
+let textoNombre = "Holis"
+
+console.log(textoNombre)
+
+if(true){
+    let textoNombre = "chau"
+}
+console.log(global)
