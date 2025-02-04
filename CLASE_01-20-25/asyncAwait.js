@@ -5,6 +5,7 @@ const fetch = require("node-fetch");
 
 async function fetchData() {
   try {
+    // axios.post(`https://jsonplaceholder.typicode.com/posts`, {body})
     const response = await fetch(`https://jsonplaceholder.typicode.com/posts`);
     const data = await response.json();
     console.log("in .async await ->", data.slice(0, 5));
@@ -15,8 +16,8 @@ async function fetchData() {
     }
 }
 
-fetchData();
-
+let resultFech = fetchData();
+console.log(resultFech) // <promises>
 // Y usando .then 
 fetch(`https://jsonplaceholder.typicode.com/posts`)
   .then((response) => response.json())
