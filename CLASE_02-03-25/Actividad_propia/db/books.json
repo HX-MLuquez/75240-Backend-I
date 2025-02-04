@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "El señor de los anillos",
+      "author": "J.R.R. Tolkien",
+      "year": 1954
+    },
+    {
+      "id": 2,
+      "title": "Harry Potter y la piedra filosofal",
+      "author": "J.K. Rowling",
+      "year": 1997
+    },
+    {
+      "id": 3,
+      "title": "Cien años de soledad",
+      "author": "Gabriel García Márquez",
+      "year": 1967
+    },
+    {
+      "id": 4,
+      "title": "El principito",
+      "author": "Antoine de Saint-Exupéry",
+      "year": 1943
+    },
+    {
+      "id": 5,
+      "title": "Don Quijote de la Mancha",
+      "author": "Miguel de Cervantes",
+      "year": 1605
+    },
+    {
+      "id": 6,
+      "title": "Orgullo y prejuicio",
+      "author": "Jane Austen",
+      "year": 1813
+    },
+    {
+      "id": 7,
+      "title": "El hobbit",
+      "author": "J.R.R. Tolkien",
+      "year": 1937
+    },
+    {
+      "id": 8,
+      "title": "Crimen y castigo",
+      "author": "Fyodor Dostoevsky",
+      "year": 1866
+    },
+    {
+      "id": 9,
+      "title": "El retrato de Dorian Gray",
+      "author": "Oscar Wilde",
+      "year": 1890
+    }
+
+]
