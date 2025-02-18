@@ -20,3 +20,19 @@ Para despliegue en Glitch:
 
 Diferencias entre WebSockets y HTTP
 - [Diferencias](https://lab.wallarm.com/what/websocket-frente-a-http/?lang=es)
+
+
+---
+
+
+- socket-emit :envía un mensaje solo al cliente que inició la conexión actual. 
+- io.emit(event, data): Envía un mensaje a TODOS los clientes conectados al servidor. 
+- socket.broadcast.emit: Envía un mensaje a todos los clientes conectados excepto al que lo envió. 
+- io.to-(socketId).emit(event, data): Envía un mensaje a un usuario específico usando su socketId.
+
+
+---
+
+Enlace al Repo bien Modularizado de este mismo proyecto
+
+- https://github.com/HX-MLuquez/chat-test

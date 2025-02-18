@@ -6,12 +6,10 @@ Para evitar errores al deployar en Glitch, se debe tener en cuenta la versión d
 Especificar la versión de Node.js y NPM en el archivo `package.json` del proyecto.
 
 ```json
-{
-  "engines": {
-    "node": "14.x",
-    "npm": "6.x"
-  }
-}
+"engines": {
+    "node": ">=16.0.0",
+    "npm": ">=10.2.4"
+  },
 ```
 Queda de la siguiente manera:
 ```json
@@ -20,9 +18,9 @@ Queda de la siguiente manera:
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-   "engines": {
-    "node": "14.17.0",
-    "npm": "10.2.4"
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=10.2.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -35,9 +33,13 @@ Queda de la siguiente manera:
     "express": "^4.19.2",
     "express-handlebars": "^8.0.1",
     "socket.io": "^4.7.5"
-  },
+  }
 }
 ```
+
+Este error tiene que ver con las diferencias entre versiones de las
+librerías que implementamos en despliegue en conjunto con las versiones
+de node y de npm
 
 Y si aparece el ERROR - Error: listen EADDRINUSE: address already in use :::8080
 
