@@ -10,6 +10,19 @@
     {{{body}}}
     {{!-- CDN sweetalert --}} 
     {{!-- SOCKET IO --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="socket.io/socket.io.js"></script>
     <script src="/js/index.js"></script>
+    <script>
+      const socket = io();
+      socket.on("messageReceived", (message) => {
+        Swal.fire({
+          title: 'New Message',
+          text: message,
+          icon: 'info',
+          confirmButtonText: 'Cool'
+        });
+      });
+    </script>
   </body>
 </html>
