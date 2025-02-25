@@ -4,6 +4,20 @@ const router = express.Router();
 
 router.get("/", getAllProducts);
 
+function getAll(text) {
+  try {
+    // ......
+    var products = [];
+    return {
+      success: true,
+      products,
+    };
+  } catch (error) {}
+}
+router.get("/", (req, res) => {
+    const products = getAll(req.query.text)
+});
+
 module.exports = router;
 
 /*
