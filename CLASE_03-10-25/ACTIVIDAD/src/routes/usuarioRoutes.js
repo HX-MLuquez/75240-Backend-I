@@ -5,7 +5,14 @@ const UsuarioController = require("../controllers/usuarioController");
 const usuario = new UsuarioController();
 
 //! *** *** ***
+router.post("/", usuario.createUser) // http://localhost:3000/api/usuarios
+router.get("/", usuario.getAllUsers) // http://localhost:3000/api/usuarios
+router.get("/:id", usuario.getUserById) // http://localhost:3000/api/usuarios/1234
+router.put("/:id", usuario.updateUserById) // http://localhost:3000/api/usuarios/1234 {body}
+router.delete("/:id", usuario.deleteUserById) // http://localhost:3000/api/usuarios/1234 
 
+
+module.exports = router;
 
 /*
 http://localhost:3000/api/usuarios

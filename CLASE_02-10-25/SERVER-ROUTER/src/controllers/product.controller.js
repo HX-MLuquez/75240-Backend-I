@@ -12,7 +12,16 @@ const getAllProducts = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+const deleteProductById = async (req, res)=> {
+  try {
+    const {id} = req.query 
+    if(!id) return res.status(400).json({success:false, messagge: "nana"})
+  } catch (error) {
+    
+  }
+  
 
+}
 module.exports = {
   getProductById,
   getAllProducts,
