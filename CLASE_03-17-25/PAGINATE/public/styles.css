@@ -1,0 +1,29 @@
+/* public/style.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: blue;
+}

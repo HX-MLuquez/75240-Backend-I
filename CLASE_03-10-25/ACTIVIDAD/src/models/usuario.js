@@ -6,6 +6,7 @@ const usuarioSchema = new mongoose.Schema({
   nombre: {
     type: String,
     required: true,
+    index: true
   },
   apellido: {
     type: String,

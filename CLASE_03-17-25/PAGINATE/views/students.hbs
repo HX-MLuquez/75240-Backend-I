@@ -1,0 +1,49 @@
+<!-- views/students.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudiantes</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Estudiantes - Paginate utilizando librería mongoose-paginate-v2</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+        <th>Género</th>
+        <th>Calificación</th>
+        <th>Grupo</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each students}}
+        <tr>
+          <td>{{this.first_name}}</td>
+          <td>{{this.last_name}}</td>
+          <td>{{this.email}}</td>
+          <td>{{this.gender}}</td>
+          <td>{{this.grade}}</td>
+          <td>{{this.group}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    {{#if hasPrevPage}}
+      <a href="/students?page={{prevPage}}&limit=10">Anterior</a>
+    {{/if}}
+    <span>Página {{currentPage}} de {{totalPages}}</span>
+    {{#if hasNextPage}}
+      <a href="/students?page={{nextPage}}&limit=10">Siguiente</a>
+    {{/if}}
+  </div>
+  <hr>
+  <a href="/students_paginate_natural">Paginación Natural (sin librería)</a>
+</body>
+</html>
